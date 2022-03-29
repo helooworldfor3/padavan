@@ -20,13 +20,13 @@ sed -i 's/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y/CONFIG_FIRMWARE_INCLUDE_SHADOWSO
 ##此插件选项只在本地编译的时候才会生效
 ##科学上网##
 echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config #科学上网插件，选择n后全部有关插件都不集成
-echo "CONFIG_FIRMWARE_INCLUDE_V2RAY=n" >> .config #集成v2ray执行文件，如果不集成，会从网上下载下来执行，不影响正常使用
-echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=y" >> .config #集成trojan执行文件，如果不集成，会从网上下载下来执行，不影响正常使用
+echo "CONFIG_FIRMWARE_INCLUDE_V2RAY=y" >> .config #集成v2ray执行文件，如果不集成，会从网上下载下来执行，不影响正常使用
+echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=n" >> .config #集成trojan执行文件，如果不集成，会从网上下载下来执行，不影响正常使用
 echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=y" >> .config #simple-obfs混淆插件
 ##科学上网##
 
 ##Openvpn服务##
-echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=y" >> .config #Openvpn服务
+echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> .config #Openvpn服务
 ##Openvpn服务##
 
 ##广告管理##
@@ -41,8 +41,8 @@ echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=n" >> .config #adg DNS去AD
 ##DNS服务##
 
 ##文件管理##
-echo "CONFIG_FIRMWARE_INCLUDE_ARIA2_NEW_PREBUILD_BIN=y" >> .config #aria2服务
-echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=y" >> .config #aria2前端
+echo "CONFIG_FIRMWARE_INCLUDE_ARIA2_NEW_PREBUILD_BIN=n" >> .config #aria2服务
+echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n" >> .config #aria2前端
 echo "CONFIG_FIRMWARE_INCLUDE_CADDY=n" >> .config #在线文件管理服务
 echo "CONFIG_FIRMWARE_INCLUDE_CADDYBIN=n" >> .config #集成caddu执行文件，此文件有13M,请注意固件大小。如果不集成，会从网上下载下来执行，不影响正常使用
 ##文件管理##
